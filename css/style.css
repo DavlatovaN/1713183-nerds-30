@@ -845,6 +845,7 @@ img{
    margin: 0px auto;
    display: flex;
 
+
  }
 .sort-list{
   flex-grow: 1;
@@ -1280,7 +1281,13 @@ opacity: 0.4;
  .cart-name:hover {
    color: var(--basic-red);
  }
-
+/*Iframe*/
+ .iframe-map{
+   width: 100%;
+   position:absolute;
+   top:0;
+   border: none;
+ }
  /* Modal */
  .modal {
    display:none;
@@ -1288,6 +1295,7 @@ opacity: 0.4;
    left: 0;
    right: 0;
    top: 50%;
+   cursor: pointer;
    transform: translateY(-50%);
    z-index: 99;
    margin: auto;
@@ -1385,12 +1393,10 @@ opacity: 0.4;
    cursor: pointer;
    right: 90px;
    top: 80px;
-
    width: 21px;
    min-height: 21px;
-
    background-color: var(--transparent);
-   border: none;
+   border: 0;
    box-shadow: none;
    opacity: 0.3;
  }
@@ -1399,14 +1405,11 @@ opacity: 0.4;
  .modal-close::after {
    content: "";
    display: block;
-
    position: absolute;
    top: 8px;
    left: -3px;
-
    width: 27px;
    height: 4px;
-
    background-color: var(--basic-red);
    border-radius: 1px;
  }
