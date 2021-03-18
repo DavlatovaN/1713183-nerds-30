@@ -675,14 +675,14 @@ img{
  /* Contacts*/
 
  .contacts {
-   background-image:;
+   position: relative;
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
  }
 
  .business-card {
-   position: relative;
+   position: absolute;
    z-index: 1;
    width: 319px;
    height: 308px;
@@ -690,6 +690,7 @@ img{
    padding: 50px;
    padding-bottom: 47px;
    background-color: var(--basic-white);
+   top: 50px;
  }
 
  .business-card-caption {
@@ -714,7 +715,7 @@ img{
  }
 
  .iframe-map {
-   position:absolute;
+   width: 100%;
    border: none;
  }
 
@@ -838,22 +839,28 @@ img{
  .sort-container{
    display: flex;
    flex-wrap: wrap;
-   column-gap: 140px;
+   column-gap: 300px;
    padding-top: 36px;
    padding-bottom:32px;
    margin: 0px auto;
 
  }
 .sort-list{
-  margin-left: 550px;
+  margin-left: 350px;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
 }
  .sort-list{
+   margin-left:550px;
    flex-grow: 1;
-   margin-right: 40px;
+ }
+ .sort-item{
+   display: flex;
+   flex-wrap: wrap;
+
+
  }
 .sort-type{
   display: flex;
@@ -865,7 +872,6 @@ img{
 
 .field-item{
   margin-right: 25px;
-
 }
 .field-link{
   text-decoration: none;
@@ -884,6 +890,7 @@ img{
  }
  .sort-range{
    display: flex;
+   flex-wrap: wrap;
    position: relative;
    right: 25px;
    margin: auto 0px;
