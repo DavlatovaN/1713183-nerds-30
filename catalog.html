@@ -6,9 +6,8 @@
   <link rel="icon" href="favicon.ico.svg">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body class="page-body">
 <header class="main-header">
   <nav class="main-navigation">
@@ -39,36 +38,6 @@
     </div>
   </div>
     <h2 class="visually-hidden">Шаблоны</h2>
-    <div class="sort-container">
-        <h3 class="sort-list">Сортировать:</h3>
-      <div class="sort-item">
-        <ul class="sort-type">
-          <li class="field-item">
-            <a class="field-link field-link-active" href="#">По цене</a>
-          </li>
-          <li class="field-item">
-            <a class="field-link " href="#">По типу</a>
-          </li>
-          <li class="field-item">
-            <a class="field-link" href="#">По названию</a>
-          </li>
-        </ul>
-      <div class="sort-range">
-        <a class="sort-button sort-button-active" href="#">
-          <div class="visually-hidden">По убыванию</div>
-          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="sort-icon" d="M5.5 10L0 0H11" fill="#A6A6A6"/>
-          </svg>
-        </a>
-        <a class="sort-button" href="#">
-          <div class="visually-hidden">По возрастанию</div>
-          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="sort-icon" d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
-          </svg>
-        </a>
-      </div>
-      </div>
-    </div>
   <div class="index-columns">
   <section class="sidebar">
     <form class="filters" method="get" action="https://echo.htmlacademy.ru/">
@@ -79,8 +48,8 @@
             <div class="scale">
               <div class="bar" style="width: 70%;"></div>
             </div>
-          <div class="toggle toggle-min" tabindex="0" style="left:0px"></div>
-          <div class="toggle toggle-max" tabindex="0" style="left:160px"></div>
+          <div class="toggle toggle-min" tabindex="0" aria-label="Минимально" style="left:0px"></div>
+          <div class="toggle toggle-max" tabindex="0" aria-label="Максимально" style="left:160px"></div>
           </div>
           <div class="price-controls">
             <label class="min-price">
@@ -139,6 +108,36 @@
   </section>
     <!--Блок с фильтрами карточек-->
   <section class="items">
+    <div class="style">
+    <h3 class="sort-list">Сортировать:</h3>
+    <div class="sort-item">
+      <ul class="sort-type">
+        <li class="field-item">
+          <a class="field-link field-link-active" href="#">По цене</a>
+        </li>
+        <li class="field-item">
+          <a class="field-link " href="#">По типу</a>
+        </li>
+        <li class="field-item">
+          <a class="field-link" href="#">По названию</a>
+        </li>
+      </ul>
+      <div class="sort-range">
+        <a class="sort-button sort-button-active" href="#">
+          <div class="visually-hidden">По убыванию</div>
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="sort-icon" d="M5.5 10L0 0H11" fill="#A6A6A6"/>
+          </svg>
+        </a>
+        <a class="sort-button" href="#">
+          <div class="visually-hidden">По возрастанию</div>
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="sort-icon" d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    </div>
       <ul class="cart-catalog">
         <li class="cart-item">
           <article>
@@ -252,8 +251,6 @@
     </div>
   </div>
 </footer>
-
-
 <!--Скрытые части-->
 <section class="modal modal-feedback">
   <h2 class="modal-title">Напишите нам</h2>
@@ -274,8 +271,7 @@
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </form>
 </section>
-
-
+<script src="js/main.min.js"></script>
 </body>
 </html>
 
