@@ -369,7 +369,7 @@ img{
    background-color: var(--basic-green);
  }
  .services-presentation::before {
-   content: url("../img/tv.png");
+   content: url("../img/illustration-3.jpg");
    background-color: var(--basic-yellow);
  }
  .article-title{
@@ -830,8 +830,8 @@ img{
  }
  .index-columns{
    display: grid;
-   grid-template-columns: 260px 1fr;
-   column-gap: 140px;
+   grid-template-columns: 360px 1fr;
+   column-gap: 40px;
    width: 1160px;
    margin: 0px auto;
  }
@@ -1025,7 +1025,7 @@ img{
    min-height: 398px;
    font-weight: 400;
    margin-bottom: 32px;
-   margin-right: 42px;
+   margin: 10px;
    font-size: 16px;
    line-height: 18px;
    border-radius: 5px;
@@ -1033,7 +1033,7 @@ img{
    color: var(--text-contact-cart);
    background-color: var(--basic-grey);
    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-   margin-top: -15px;
+
    list-style: none;
  }
  .cart-item:hover {
@@ -1089,7 +1089,7 @@ img{
    position: absolute;
  }
  .items{
-   margin: 40px;
+   margin: 40px 0;
  }
  .style{
    position: relative;
