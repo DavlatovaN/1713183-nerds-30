@@ -82,7 +82,7 @@
  .list-style-none{
    list-style: none;
  }
-img{
+  img{
   max-width: 100%;
   height: auto;
 }
@@ -298,7 +298,7 @@ img{
    width: 15px;
    height: 15px;
    background-image: url("../img/cart-icon.svg");
-   left:-20px;
+   left:0px;
    top: 5px;
  }
  .list-title {
@@ -421,7 +421,7 @@ img{
  .features-description-container {
    position: relative;
    z-index: 1;
-   padding-top: 78px;
+   padding-top: 65px;
    width: 560px;
  }
  .slide-image {
