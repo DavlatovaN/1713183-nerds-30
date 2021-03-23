@@ -345,7 +345,7 @@
    font-size: 24px;
    line-height: 30px;
    color: var(--heading-color);
-   margin-bottom: 16px;
+   margin-bottom:0;
    align-items: center;
    text-transform: uppercase;
  }
@@ -354,7 +354,7 @@
    font-size: 16px;
    line-height: 24px;
    color: var(--text-contact-cart);
-   margin-top: 0;
+   margin-top:16px;
    margin-bottom: 33px;
    width: 260px;
  }
@@ -446,7 +446,6 @@
  }
  .services-list{
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
    margin: 0;
    padding: 0;
    column-gap:100px;
@@ -551,7 +550,6 @@
 }
 .accuracy-list{
   list-style: none;
-  margin-top: 32px;
 }
 .accuracy-list{
   display: flex;
