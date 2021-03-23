@@ -284,7 +284,7 @@
    opacity: 1;
  }
  .navigation-item a:active{
-   opacity: 0.2;
+   opacity: 0.3;
  }
  .cart-link {
    position: relative;
@@ -300,6 +300,9 @@
    background-image: url("../img/cart-icon.svg");
    left:0px;
    top: 5px;
+ }
+ .cart-link:active{
+   opacity: 0.3;
  }
  .list-title {
    font-size: 55px;
@@ -610,6 +613,9 @@
  }
  .client:hover{
    opacity: 1;
+ }
+ .client:active{
+   opacity:0.3;
  }
  .clients-list li:not(:last-child)::after {
    content: "";
@@ -1069,6 +1075,9 @@
  .cart-title a:focus{
    opacity: 1;
  }
+ .cart-title a:active{
+   opacity: 0.3;
+ }
  .cart-description{
    background-color: var(--basic-grey)
  }
@@ -1313,6 +1322,7 @@
  .modal-submit {
    min-width: 259px;
    margin-right: auto;
+
  }
  .modal-submit:hover {
    background-color: var(--focus-red);
