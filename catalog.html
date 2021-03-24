@@ -12,6 +12,7 @@
 </head>
 <body class="page-body">
 <header class="main-header">
+  <div class="container">
   <nav class="main-navigation">
     <div class="main-header-bar">
       <div class="main-navigation-wrapper">
@@ -36,6 +37,7 @@
       </div>
     </div>
   </nav>
+  </div>
 </header>
 <!--Главный контент-->
 <main class="page-catalog container ">
@@ -47,6 +49,7 @@
   <h2 class="visually-hidden">Шаблоны</h2>
   <div class="index-columns">
     <section class="sidebar">
+      <div class="container">
       <form class="filters" method="get" action="https://echo.htmlacademy.ru/">
         <fieldset class=" sidebar-fieldset sidebar-price">
           <legend class="sidebar-legend">Стоимость:</legend>
@@ -89,7 +92,7 @@
           </ul>
         </fieldset>
         <fieldset class=" sidebar-fieldset sidebar-features">
-          <legend class="sidebar-legend">Особенности:</legend>
+          <legend class="sidebar-legend ">Особенности:</legend>
           <ul class="sidebar-list">
             <li class="sidebar-option sidebar-checkbox">
               <input class="visually-hidden sidebar-input-checkbox" type="checkbox" name="checkbox-slider"
@@ -120,6 +123,7 @@
         </fieldset>
         <button class="button filter-button" type="submit" aria-label="Применить фильтры">Показать</button>
       </form>
+      </div>
     </section>
     <!--Блок с фильтрами карточек-->
     <section class="items">
@@ -223,9 +227,9 @@
           <li class="pagination-item"><a class="pagination-link pagination-next" href="#">Следующая</a></li>
         </ul>
       </div>
+
     </section>
   </div>
-  <!--Здесь будет карта-->
 </main>
 <footer class="main-footer">
   <div class="contacts">
@@ -271,7 +275,7 @@
 <!--Скрытые части-->
 <section class="modal modal-feedback">
   <h2 class="modal-title">Напишите нам</h2>
-  <form class="feedback-form" action="post" name="feedback-form">
+  <form class="feedback-form" method="post" name="feedback-form">
     <div class="modal-half-container">
       <label class="form-label" for="name-field">Ваше имя:</label>
       <input class="modal-input" type="text" required id="name-field" name="name" placeholder="Имя Фамилия">
